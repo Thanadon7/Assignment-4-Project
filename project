@@ -57,17 +57,14 @@ class Dictionary:
             else:
                 self.tail = entry_to_delete.prev_entry
 
-# สร้างพจนานุกรม
 dictionary = Dictionary()
 
-# เพิ่มคำศัพท์
 entry1 = DictionaryEntry("Hello", "สวัสดี", "Greeting")
 entry2 = DictionaryEntry("Cat", "แมว", "Animal")
 
 dictionary.add_entry(entry1)
 dictionary.add_entry(entry2)
 
-# แสดงคำศัพท์ทั้งหมด
 current_entry = dictionary.head
 while current_entry:
     print(f"English: {current_entry.english_word}, Thai: {current_entry.thai_translation}, Type: {current_entry.word_type}")
